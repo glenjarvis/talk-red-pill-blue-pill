@@ -11,6 +11,8 @@ it works. See:
 
 https://docs.google.com/file/d/0B1tPdExbbaW0dDdUZVUtd3I0aFU/edit
 
+Original presentation material is available at:
+http://prezi.com/user/glenjarvis
 
 Before you run these scripts, you will need to get your security credentials
 from Amazon and place them in the private.py file.

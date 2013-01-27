@@ -1,0 +1,160 @@
+7:30 PM General hubbub, inventory end-of-meeting announcements, any
+first-minute announcements.
+7:35 PM to 7:40 PM Newbie Nugget (a tip for beginners)
+7:40 PM to 8:40 PM (or so) Red Pill Blue Pill Virtualization talk
+8:40 PM to 9:30 PM Mapping and Random Access
+
+Mapping is a rapid-fire audience announcement of issues, hiring,
+events, and other topics.
+
+Random Access follows people immediately to allow follow up on the
+announcements and other interests.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Prep Checklist:
+* video adaptor
+* Amazon 2-factor validation
+* Amazon logged in
+* windows VirtualBox running
+* Terminal open with cd aws_demo
+* chrome open to: aws.amazon.com
+* chrome open to: http://www.python.org/dev/peps/pep-0405/
+* http://docs.python.org/dev/library/venv.html
+* http://en.wikipedia.org/wiki/Virtualization
+* PDF for lab opened
+* Turn off screensaver
+
+
+
+
+
+
+=====
+Compare to multitasking
+
+This parallelism tends to reduce overhead costs and differs from multitasking, which involves running several programs on the same OS.
+
+=====
+Do we want to max out the CPU on your computer?
+
+[ ] Yes
+[ ] No
+====
+Objectives:
+
+* Utilize more of hardware -- CPUs usually sitting idle 
+* Centralize admin tasks
+* Scalability
+* Snapshots
+* Teleportation
+* Failover
+
+The usual goal of virtualization is to centralize administrative tasks while improving scalability and overall hardware-resource utilization.
+
+With using Virtualization an enterprise will be able to better manage updates and rapid changes to the operating system and applications without disrupting the user. "Ultimately, virtualization dramatically improves the efficiency and availability of resources and applications in an organization. Instead of relying on the old model of “one server, one application” that leads to underutilized resource, virtual resources are dynamically applied to meet business needs without any excess fat" (ConsonusTech).
+======
+
+Types of Virtualization
+
+* Hardware  <== Boto/AWS example here
+* Desktop
+* Software   <== Virtualenv fits here
+* Memory
+* Storage
+* Data
+* Network
+======
+
+Hardware
+
+Emulation -- one piece of hardware imitates another piece of hardware
+
+Vocabulary:
+    - Host (the software pretending to be hardware/the physical machine the hardware is in)
+    - Guest (the software running inside that pretend  hardware (sometimes guest doesn't even know)
+    - Hypervisor (or virtual machine manager)
+
+
+   - Full virtualization - Software completely pretending to be hardware (the guest os doesn't know the difference)
+   - Paravirtualization -- Hardware not simulated; The Guest OS however, is completely isolated into different domains like they're running on different hardware (Guest OS has to know it's being paravirtualized)
+   - Partial virtualization -- half and half of the above. At least some guest OS needs to know it's paravirtualized
+
+
+hardware assistance virtualization (special CPU -- intel has one; remember protected operations … CPU assembly protected.. not-protected.. why not a third one for virtualization)… 
+
+
+http://en.wikipedia.org/wiki/Virtualization#Hardware
+======
+Software
+
+Operating system-level virtualization
+
+* VEs
+* VPSs
+* Jails
+
+(chroot or FreeBSD Jail)
+
+do chroot demo
+
+Virtual Hosting
+FTP SERVERS --
+
+Little overhead  -- No emulation
+Just clever and secure OS system call
+
+VirtualEnv falls into here
+=====
+
+Memory
+
+http://en.wikipedia.org/wiki/File:Memory_virtualization_addressable_level.png
+
+http://en.wikipedia.org/wiki/File:Memory_virtualization_addressable_level.png
+
+This is not new
+
+Virtual Memory
+
+1950s
+
+See, we use the name without even stopping to think.
+
+The concept of virtual memory was developed by the german physicist Fritz-Rudolf Güntsch at the Technische Universität Berlin in 1956.[4][5]
+
+	•.	^ E. Jessen: Origin of the Virtual Memory Concept. IEEE Annals of the History of Computing. Vol. 26. 4/2004, Page 71 ff.
+	•.	^ Jessen, Eike (1996). "Die Entwicklung des virtuellen Speichers" (in german). Informatik-Spektrum(Springer Berlin / Heidelberg) 19 (4): 216-219. doi:10.1007/s002870050034. ISSN 0170-6012.
+
+
+http://en.wikipedia.org/wiki/File:Virtual_memory.svg
+
+
+=====
+Storage
+http://en.wikipedia.org/wiki/Storage_hypervisor
+
+====
+Network
+http://en.wikipedia.org/wiki/Network_virtualization
+=====

@@ -1,0 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+MY_AWS_ACCESS_KEY = '<PUT YOUR CREDENTIALS HERE>'
+MY_AWS_SECRET_ACCESS_KEY = '<PUT YOUR SECRET KEY HERE>'
